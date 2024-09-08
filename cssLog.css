@@ -1,0 +1,19 @@
+div{
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    border: solid 1px skyblue;
+    border-radius: 5px;
+    background-color: white;
+}
+input{
+    border-bottom: solid 1px skyblue;
+}
+#bu{
+    color: white;
+    background-color: skyblue;
+    border: solid 1px skyblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}

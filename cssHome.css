@@ -1,0 +1,106 @@
+.smallc{
+    color: skyblue;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:inline-flex;
+}
+.small{
+    height:200px;
+    width:300px;
+    margin: 0px 20px;
+    border-radius: 20px;
+    border-color: skyblue;
+    border-width: 1px;
+    border-style: solid;
+    display: flexbox;
+}
+
+.long{
+    height:200px;
+    width:98%;
+    margin: 20px 20px;
+    border-radius: 20px;
+    border-color: skyblue;
+    border-width: 1px;
+    border-style: solid;
+    display: flexbox;
+}
+
+.vOpen{
+    margin-right: 5px;
+    margin-top: 20%;
+    height: 30px;
+    width:80px;
+    float: right;
+    border-color:white ;
+    color: white;
+    background-color: skyblue;
+    box-shadow: none;
+    border-radius: 5px;
+    
+}
+.eOpen{
+    margin-left: 5px;
+    margin-top: 20%;
+    
+    height: 30px;
+    width:80px;
+    float: left;
+    border-color: skyblue;
+    color: skyblue;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 5px;
+}
+.eOpenl{
+    margin-left: 5px;
+    margin-top: 3%;
+    top:80%;
+    height: 30px;
+    width:80px;
+    float: left;
+    border-color: skyblue;
+    color: skyblue;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 5px;
+    
+}
+.vOpenl{
+    margin-right: 5px;
+    margin-top: 3%;
+    top:80%;
+    height: 30px;
+    width:80px;
+    float: right;
+    border-color:white ;
+    color: white;
+    background-color: skyblue;
+    box-shadow: none;
+    border-radius: 5px;
+    
+}
+#logReport{
+    height: 30px;
+    width:80px;
+    float: left;
+    border-color:white ;
+    color: white;
+    background-color: skyblue;
+    box-shadow: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#logOut{
+    height: 30px;
+    width:80px;
+    float: right;
+    border-color:white ;
+    color: white;
+    background-color: skyblue;
+    box-shadow: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
