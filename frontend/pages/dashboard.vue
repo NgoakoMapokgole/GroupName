@@ -1,18 +1,5 @@
 <template>
 <body>
-    <header>
-        <nuxt-link  to="/index" class="HeadButtons" style="float: left;" ><img src="menu.png" alt="Menu" id="menu" align="center"></nuxt-link>
-        <h1><nuxt-link to="/index">Neural Nexus</nuxt-link></h1>
-        <nav>
-            <ul >
-                <li style="list-style: none;" ><nuxt-link to="/index"><img src="search.png" alt="Search" class=HeadButtons></nuxt-link></li style="list-style: none;">
-    
-                <li style="list-style: none;" ><nuxt-link to="/index"><img src="settings.png" alt="Settings" class=HeadButtons></nuxt-link></li style="list-style: none;">
-                
-                <li style="list-style: none;" ><nuxt-link to="/index"><img src="profile.png" alt="Profile" class=HeadButtons></nuxt-link></li style="list-style: none;">
-            </ul>
-        </nav>
-    </header>
     <h2>Dashboard and analysis</h2>
     <div class="layoutd">
     <div>
@@ -73,7 +60,7 @@
     </section>
     <footer align="center">
         <br>
-        <nuxt-link to="/index" style="background-color: skyblue; color: white; border-radius: 7px;"><label>Report update</label></nuxt-link>
+        <nuxt-link to="/index" ><label id="Report">Report update</label></nuxt-link>
         <p>Neural Nexus generated statistics</p>
     </footer>
 </body>
@@ -85,6 +72,11 @@
 </script>
 
 <style scoped>
+    #Report{
+        background-color: skyblue; 
+        color: white;
+        border-radius: 7px;
+    }
     .vOpen{
     border-style:solid;
     border-width: 2px;
