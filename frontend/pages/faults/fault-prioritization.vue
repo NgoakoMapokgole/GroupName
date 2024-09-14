@@ -32,6 +32,29 @@
 </template>
 
 <script setup>
+    table{
+    width: 100%;
+    margin-top: 20px;
+    border-color: skyblue;
+    color: skyblue;
+    table-layout: fixed;
+
+    
+}
+tr{
+    border-color: skyblue;
+    color: skyblue;
+    border-style: solid;
+    border-width: 1px;
+}
+th{
+    border-color: skyblue;
+    color: skyblue;
+    border-style: solid;
+    border-width: 1px;
+    width: 200px;
+    height: auto;
+}
 
 </script>
 
