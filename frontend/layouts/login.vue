@@ -6,9 +6,9 @@
                     <NuxtLink to="/">Neural Nexus</NuxtLink>
                 </div>
                 <ul class="flex gap-3">
-                    <li class="hover:cursor-pointer hover:text-slate-300 duration-300"><MdiIcon icon="mdiMagnify" /></li>
-                    <li class="hover:cursor-pointer hover:text-slate-300 duration-300"><MdiIcon icon="mdiPencilOutline" /></li>
-                    <li class="hover:cursor-pointer hover:text-slate-300 duration-300"><MdiIcon icon="mdiAccountOutline" /></li>
+                    <li class="hover:cursor-pointer hover:text-slate-300 duration-300"><MdiIcon icon="mdiCog" /></li>
+                    <li class="hover:cursor-pointer hover:text-slate-300 duration-300"><MdiIcon icon="mdiKeyboard" /></li>
+                    <li class="hover:cursor-pointer hover:text-red-500 duration-300"><MdiIcon icon="mdiCloseCircleOutline" /></li>
                 </ul>
             </nav>
         </header>
