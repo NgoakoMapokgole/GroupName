@@ -1,6 +1,7 @@
 <template>
     <div class="text-lg font-semibold text-left p-4">Fault Prioritization</div>
     <body>
+    
         <h2>Priorities</h2>
         
     <table>

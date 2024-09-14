@@ -1,6 +1,5 @@
 <template>
 <body>
-    
     <h2>Dashboard and analysis</h2>
     <div class="layoutd">
     <div>
@@ -61,7 +60,7 @@
     </section>
     <footer align="center">
         <br>
-        <nuxt-link to="/index" style="background-color: skyblue; color: white; border-radius: 7px;"><label>Report update</label></nuxt-link>
+        <nuxt-link to="/index" ><label id="Report">Report update</label></nuxt-link>
         <p>Neural Nexus generated statistics</p>
     </footer>
 </body>
@@ -73,6 +72,11 @@
 </script>
 
 <style scoped>
+    #Report{
+        background-color: skyblue; 
+        color: white;
+        border-radius: 7px;
+    }
     .vOpen{
     border-style:solid;
     border-width: 2px;
