@@ -2,7 +2,7 @@
 <body>
     <header>
         <nuxt-link  to="/index" class="HeadButtons" style="float: left;" ><img src="menu.png" alt="Menu" id="menu" align="center"></nuxt-link>
-        <h1><nuxt-link to="/index""dash.html">Neural Nexus</nuxt-link></h1>
+        <h1><nuxt-link to="/index">Neural Nexus</nuxt-link></h1>
         <nav>
             <ul >
                 <li style="list-style: none;" ><nuxt-link to="/index"><img src="search.png" alt="Search" class=HeadButtons></nuxt-link></li style="list-style: none;">
@@ -82,7 +82,10 @@
 <script setup>
     
 
-.vOpen{
+</script>
+
+<style scoped>
+    .vOpen{
     border-style:solid;
     border-width: 2px;
     border-color: skyblue;
@@ -146,9 +149,4 @@ h2{
     
     
 }
-
-</script>
-
-<style scoped>
-
 </style>
