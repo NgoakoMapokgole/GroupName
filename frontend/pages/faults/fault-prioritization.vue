@@ -32,7 +32,12 @@
 </template>
 
 <script setup>
-    table{
+    
+
+</script>
+
+<style scoped>
+table{
     width: 100%;
     margin-top: 20px;
     border-color: skyblue;
@@ -55,9 +60,4 @@ th{
     width: 200px;
     height: auto;
 }
-
-</script>
-
-<style scoped>
-
 </style>
