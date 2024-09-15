@@ -42,18 +42,23 @@
                 <!--Graph-->
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">SLA/OLA</nuxt-link>
+                <BarChart />
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">Performance</nuxt-link>
+                <BarChart />
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">High risk</nuxt-link>
+                <BarChart />
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">Time spent</nuxt-link>
+                <BarChart />
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">resolution</nuxt-link>
+                <BarChart />
             </section>
         
         
@@ -68,6 +73,32 @@
 
 <script setup>
     
+import { ref, onMounted } from 'vue'
+import BarChart from '~/components/BarChart.vue'
+
+const overviewText = ref('This is a brief description of the status of the system')
+const faultStatus = ref('Managed successfully')
+const slaOlaPerformance = ref({
+  olaManagedBy: 'None',
+  olaIssues: 'None',
+  slaManagedBy: 'None',
+  slaIssues: 'None'
+})
+
+onMounted(() => {
+  // Simulate fetching data from an API
+  setTimeout(() => {
+    overviewText.value = 'Updated system status'
+    faultStatus.value = 'Updated fault status'
+    slaOlaPerformance.value = {
+      olaManagedBy: 'Team A',
+      olaIssues: 'Issue 1, Issue 2',
+      slaManagedBy: 'Team B',
+      slaIssues: 'Issue 3, Issue 4'
+    }
+  }, 2000)
+})
+
 
 </script>
 
