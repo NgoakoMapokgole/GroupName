@@ -66,5 +66,46 @@
 </script>
 
 <style scoped>
+ #Details section{
+    border-style:solid;
+    border-width: 2px;
+    border-color: skyblue;
+    color:skyblue;
+    background-color: white;
+ }
 
+#Details{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: skyblue;
+    color:skyblue;
+    background-color: white;
+}
+#Details h2{
+    color:skyblue;
+    text-align: center;
+}
+footer{
+    display: flexbox;
+    justify-self: center;
+    align-content: center;
+    color:red;
+}
+#Data{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: skyblue;
+    color:skyblue;
+    background-color: white;
+}
 </style>
