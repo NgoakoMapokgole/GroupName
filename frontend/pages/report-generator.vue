@@ -1,13 +1,5 @@
 <template>
     <div class="text-lg font-semibold text-left p-4">Report generator</div>
-    <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="cssMain.css">
-    <link rel="stylesheet" href="cssAIReport.css">
-</head>
 <body>
     <h2>Overall Database</h2>
     <table>
@@ -41,7 +33,6 @@
         <p>Neural Nexus</p>
     </footer>
 </body>
-</html>
 </template>
 
 <script setup>
