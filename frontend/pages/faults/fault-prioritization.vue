@@ -5,15 +5,16 @@
         <h2>Priorities</h2>
         
     <table>
-        <tr>
-            <th>Priority number</th>
-            <th>Ticket Number</th>
-            <th>Ticket Issue</th>
-            <th>Ticket Time and Date</th>
-            <th>Ticket prioritization</th>
-            <th>Resolve</th>
-        </tr>
-        
+        <thead>
+            <tr>
+                <th>Priority number</th>
+                <th>Ticket Number</th>
+                <th>Ticket Issue</th>
+                <th>Ticket Time and Date</th>
+                <th>Ticket prioritization</th>
+                <th>Resolve</th>
+            </tr>
+        </thead>   
     </table>
 
    </body>
