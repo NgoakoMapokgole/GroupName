@@ -28,7 +28,7 @@
     </footer>
 </template>
 
-<script scoped>
+<script setup>
 
 </script>
 
