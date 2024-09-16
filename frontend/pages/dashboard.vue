@@ -1,4 +1,5 @@
 <template>
+     <script src="https://www.gstatic.com/charts/loader.js"></script> 
 <body>
     <h2>Dashboard and analysis</h2>
     <div class="layoutd">
@@ -42,23 +43,23 @@
                 <!--Graph-->
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">SLA/OLA</nuxt-link>
-                <BarChart />
+                 <div id="myChartSLA" style="max-width:700px; height:400px"></div> 
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">Performance</nuxt-link>
-                <BarChart />
+                 <div id="myChartPerformance" style="max-width:700px; height:400px"></div> 
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">High risk</nuxt-link>
-                <BarChart />
+                 <div id="myChartRisk" style="max-width:700px; height:400px"></div> 
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">Time spent</nuxt-link>
-                <BarChart />
+                 <div id="myChartTime" style="max-width:700px; height:400px"></div> 
             </section>
             <section class="dGraphs">
                 <nuxt-link to="/index" class="tags" style="color: skyblue;">resolution</nuxt-link>
-                <BarChart />
+                 <div id="myChartResolution" style="max-width:700px; height:400px"></div> 
             </section>
         
         
@@ -72,33 +73,123 @@
 </template>
 
 <script setup>
+    google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChartSLA() {
+
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Alarm', 'ReportsSolved'],
+  ['Italy', 55],
+  ['France', 49],
+  ['Spain', 44],
+  ['USA', 24],
+  ['Argentina', 15]
+]);
+
+// Set Options
+const options = {
+  title: 'Resolution per alarm'
+};
+
+// Draw
+const chart = new google.visualization.BarChart(document.getElementById('myChartSLA'));
+chart.draw(data, options);
+
+}
     
-import { ref, onMounted } from 'vue'
-import BarChart from '~/components/BarChart.vue'
+function drawChartP() {
 
-const overviewText = ref('This is a brief description of the status of the system')
-const faultStatus = ref('Managed successfully')
-const slaOlaPerformance = ref({
-  olaManagedBy: 'None',
-  olaIssues: 'None',
-  slaManagedBy: 'None',
-  slaIssues: 'None'
-})
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Alarm', 'ReportsSolved'],
+  ['Italy', 55],
+  ['France', 49],
+  ['Spain', 44],
+  ['USA', 24],
+  ['Argentina', 15]
+]);
 
-onMounted(() => {
-  // Simulate fetching data from an API
-  setTimeout(() => {
-    overviewText.value = 'Updated system status'
-    faultStatus.value = 'Updated fault status'
-    slaOlaPerformance.value = {
-      olaManagedBy: 'Team A',
-      olaIssues: 'Issue 1, Issue 2',
-      slaManagedBy: 'Team B',
-      slaIssues: 'Issue 3, Issue 4'
-    }
-  }, 2000)
-})
+// Set Options
+const options = {
+  title: 'Resolution per alarm'
+};
 
+// Draw
+const chart = new google.visualization.BarChart(document.getElementById('myChartPerformance'));
+chart.draw(data, options);
+
+}
+
+    function drawChartR() {
+
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Alarm', 'ReportsSolved'],
+  ['Italy', 55],
+  ['France', 49],
+  ['Spain', 44],
+  ['USA', 24],
+  ['Argentina', 15]
+]);
+
+// Set Options
+const options = {
+  title: 'Resolution per alarm'
+};
+
+// Draw
+const chart = new google.visualization.BarChart(document.getElementById('myChartRisk'));
+chart.draw(data, options);
+
+}
+
+function drawChartT() {
+
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Alarm', 'ReportsSolved'],
+  ['Italy', 55],
+  ['France', 49],
+  ['Spain', 44],
+  ['USA', 24],
+  ['Argentina', 15]
+]);
+
+// Set Options
+const options = {
+  title: 'Resolution per alarm'
+};
+
+// Draw
+const chart = new google.visualization.BarChart(document.getElementById('myChartTime'));
+chart.draw(data, options);
+
+}
+
+function drawChartRS() {
+
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Alarm', 'ReportsSolved'],
+  ['Italy', 55],
+  ['France', 49],
+  ['Spain', 44],
+  ['USA', 24],
+  ['Argentina', 15]
+]);
+
+// Set Options
+const options = {
+  title: 'Resolution per alarm'
+};
+
+// Draw
+const chart = new google.visualization.BarChart(document.getElementById('myChartResolution'));
+chart.draw(data, options);
+
+}
 
 </script>
 
